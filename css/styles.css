@@ -111,8 +111,8 @@ header .container {
 
 
 
-.navigat:hover::after
-.navigat:active::after {
+.menu_li:hover::after,
+.menu_li:active::after {
   left: 0;
   bottom: -1px;
   height: 4px;
@@ -485,21 +485,22 @@ footer {
 
 
 }
-.social_h3 {
+.social_p {
   font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.32px;
     color: var(--WHITE, #FFF);
-padding-bottom: 16px;
+margin-bottom: 16px;
 
 
 }
 footer .container {
   display: flex;
   align-items: baseline;
+  margin-right: 120px
 }
 
 .footer_2 {
@@ -527,7 +528,10 @@ display: flex;
 }
 
 .social-a:hover,
-.social-a:active {
+.social-a:focus {
   
 background-color:  var(--GREEN, #31D0AA);
+}
+.svg-icons {
+fill: #f4f4fd;
 }
