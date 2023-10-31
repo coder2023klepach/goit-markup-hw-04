@@ -500,7 +500,7 @@ margin-bottom: 16px;
 footer .container {
   display: flex;
   align-items: baseline;
-  margin-right: 120px
+  
 }
 
 .footer_2 {
@@ -534,4 +534,8 @@ background-color:  var(--GREEN, #31D0AA);
 }
 .svg-icons {
 fill: #f4f4fd;
+}
+
+.footer_container {
+  margin-right: 120px
 }
