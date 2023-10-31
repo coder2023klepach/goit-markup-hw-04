@@ -104,12 +104,22 @@ header .container {
   color: #2E2F42;
   font-weight: 500;
   padding: 24px 0;
-  
+  position: relative;
+    color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 
+.navigat:hover::after
+.navigat:active::after {
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  content: '';
+}
 /* Adress changes */
 
 .address-info {
@@ -130,28 +140,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
-.navigat:hover,
-.navigat:focus {
-  color: #404BBF;
-  
-}
+
 .menu_li {
   display: block;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu_li:hover::after,
-.menu_li:active::after {
- content: "";
- width: 100%;
- height: 4px;
- background-color: #404bbf;
- /* ocean */
- border-radius: 2px;
- display: block;
- margin-top: 20px;
- position: absolute;
- }
+
 
  
 
@@ -203,6 +198,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: auto;
   margin-right: auto;
 min-width: 169px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* when clicking button, change colors */
@@ -361,7 +357,9 @@ margin: 24px 100px;
   height: 40px;
   
 }
-
+.svg_member {
+fill: #f4f4fd;
+}
 
 /* Main section 4 - Our Portfolio */
 .portfolio_section {
