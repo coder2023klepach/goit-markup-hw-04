@@ -107,18 +107,21 @@ header .container {
   position: relative;
     color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
 }
 
 
 
-.menu_li:hover::after,
-.menu_li:active::after {
+
+.menu_li .navigat:active::after {
   left: 0;
   bottom: -1px;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
-  content: '';
+  content: "";
+  position: absolute;
+
 }
 /* Adress changes */
 
@@ -141,14 +144,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.menu_li {
-  display: block;
-    position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 
- 
+
+
 
 
 /* main section 1, hero */
@@ -267,17 +266,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       display: flex;
       justify-content: center;
         align-items: center;
+        margin-bottom: 8px;
 
 }
-.svg_ul {
-  display: flex;
-  gap: 24px;
-  padding-bottom: 8px;
-  
-}
-.svg_benefits {
-margin: 24px 100px;
-}
+
+
 /* Main section 3 - our team */
 .section_three {
   background: var(--CLOUD, #F4F4FD);
